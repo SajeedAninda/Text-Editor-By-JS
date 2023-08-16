@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-bricolage {
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+
+        .bg {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(72, 204, 242, 1) 0%, rgba(18, 108, 101, 1) 100%);
+        }
+
+        .bg2 {
+            background: rgb(146, 229, 217);
+            background: linear-gradient(163deg, rgba(146, 229, 217, 1) 0%, rgba(175, 237, 255, 1) 0%, rgba(61, 164, 156, 1) 100%);
+        }
+    </style>
+</head>
+
+<body class="font-bricolage">
+    <div class="container-div flex justify-center items-center h-screen">
+        <div
+            class="editor-div bg shadow-2xl w-9/12 mx-auto rounded-xl h-[80vh] text-center flex justify-center items-center flex-col">
+            <h1 class="text-3xl font-bold my-4">My Text Editor</h1>
+            <div class="inner-div bg2 w-9/12 rounded-xl px-5 py-3">
+                <div class="styles-div flex justify-between items-center border-b-2 border-black">
+                    <div class="font-styles text-xl space-x-3  flex-1">
+                        <i id="bold" class="fa-solid fa-bold cursor-pointer"></i>
+                        <i id="italic" class="fa-solid fa-italic cursor-pointer"></i>
+                        <i id="underline" class="fa-solid fa-underline cursor-pointer"></i>
+                    </div>
+                    <div class="alignments text-xl space-x-3 flex-1">
+                        <i id="left-align" class="fa-solid fa-align-left cursor-pointer"></i>
+                        <i id="center-align" class="fa-solid fa-align-center cursor-pointer"></i>
+                        <i id="right-align" class="fa-solid fa-align-right cursor-pointer"></i>
+                        <i id="justified" class="fa-solid fa-align-justify cursor-pointer"></i>
+                    </div>
+                    <div class="misc flex-1 space-x-4 flex items-center">
+                        Size: <input id="size" class="w-[20%] text-center cursor-pointer" type="number" value="16">
+                        <i id="uppercase" class="fa-solid fa-a cursor-pointer"></i>
+                        <input id="color" class="cursor-pointer" type="color" name="" id="">
+                    </div>
+                </div>
+                <div class="txt-div p-3">
+                    <textarea class="w-[99%] h-80 outline-none" name="" id="textarea" cols="" rows="13"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="editor.js"></script>
+</body>
+
+</html>
