@@ -34,10 +34,11 @@
 <body class="font-bricolage">
     <div class="container-div flex justify-center items-center h-screen">
         <div
-            class="editor-div bg shadow-2xl w-9/12 mx-auto rounded-xl h-[80vh] text-center flex justify-center items-center flex-col">
-            <h1 class="text-3xl font-bold my-4">My Text Editor</h1>
-            <div class="inner-div bg2 w-9/12 rounded-xl px-5 py-3">
-                <div class="styles-div flex justify-between items-center border-b-2 border-black">
+            class="editor-div bg shadow-2xl w-[90%] lg:w-9/12 mx-auto rounded-xl h-[80vh] text-center flex justify-center items-center flex-col">
+            <h1 class="text-3xl font-bold mb-4">My Text Editor</h1>
+            <div class="inner-div bg2 w-[90%] lg:w-9/12 rounded-xl px-5 py-3">
+                <div
+                    class="styles-div flex flex-col md:flex-row space-y-2 md:space-y-0 justify-between items-center border-b-2 border-black">
                     <div class="font-styles text-xl space-x-3  flex-1">
                         <i id="bold" class="fa-solid fa-bold cursor-pointer"></i>
                         <i id="italic" class="fa-solid fa-italic cursor-pointer"></i>
@@ -49,7 +50,7 @@
                         <i id="right-align" class="fa-solid fa-align-right cursor-pointer"></i>
                         <i id="justified" class="fa-solid fa-align-justify cursor-pointer"></i>
                     </div>
-                    <div class="misc flex-1 space-x-4 flex items-center">
+                    <div class="misc flex-1 space-x-4 flex items-center justify-center">
                         Size: <input id="size" class="w-[20%] text-center cursor-pointer" type="number" value="16">
                         <i id="uppercase" class="fa-solid fa-a cursor-pointer"></i>
                         <input id="color" class="cursor-pointer" type="color" name="" id="">
